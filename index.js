@@ -9,8 +9,8 @@ function nowServing(n){
   if (!n.length){
     return "There is nobody waiting to be served!";
   }else{
-    n.shift();
     return `Currently serving ${n[0]}.`;
+    n.shift();
 
   }
 }
