@@ -18,7 +18,7 @@ function currentLine(deliLine){
     return "The line is currently empty.";
   };
   for(var i = 0; i < deliLine.length; i++){
-    position.push(` ${i +1}, ${deliLine[i]}`)
+    position.push(` ${i +1}. ${deliLine[i]}`)
   };
   return "The line is currently:" + position;
 }
