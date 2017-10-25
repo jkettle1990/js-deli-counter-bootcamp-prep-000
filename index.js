@@ -13,10 +13,12 @@ function nowServing(deliLine){
 }
 
 function currentLine(deliLine){
+  var position = [];
   if (!deliLine.length){
     return "The line is currently empty.";
-  }
+  };
   for(var i = 0; i < deliLine.length; i++){
-    return `The line is currently : ${deliLine.length}. ${deliLine[i]}`
-  }
+    position.push(` ${i +1}, ${deliLine[i]}`)
+  };
+  return "The line is currently:" + position;
 }
