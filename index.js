@@ -11,6 +11,6 @@ function nowServing(n){
   }else{
     n.shift();
     return `Currently serving ${n[0]}.`;
-    
+
   }
 }
